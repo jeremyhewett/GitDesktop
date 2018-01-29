@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using Consolas.Core;
 
 namespace GitDesktop
 {
-    internal class Program
+    class Program : ConsoleApp<Program>
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            Match(args);
         }
     }
 }
