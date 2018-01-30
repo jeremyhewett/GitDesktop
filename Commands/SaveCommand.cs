@@ -14,7 +14,11 @@ namespace GitDesktop.Commands
             using (var repo = new Repository(args.Repo))
             {
                 LibGit2Sharp.Commands.Stage(repo, "*");
-                Commit commit = repo.Commit(args.Message, author, author);
+                try
+                {
+                    repo.Commit(args.Message, author, author);
+                }
+                catch (EmptyCommitException) { }
                 repo.Network.Push(repo.Head);
             }
         }
