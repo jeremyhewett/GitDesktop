@@ -2,12 +2,12 @@ using Consolas.Core;
 
 namespace GitDesktop.Args
 {
-    public class CloneArgs
+    public class OpenArgs
     {
-        public bool Clone { get; set; }
+        public bool Open { get; set; }
         public string Source { get; set; }
         
-        public CloneArgs()
+        public OpenArgs()
         {
             Source = "../../../aclx.git";
         }

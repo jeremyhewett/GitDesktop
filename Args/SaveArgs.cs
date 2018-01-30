@@ -2,14 +2,16 @@ using Consolas.Core;
 
 namespace GitDesktop.Args
 {
-    public class PushArgs
+    public class SaveArgs
     {
-        public bool Push { get; set; }
+        public bool Save { get; set; }
         public string Repo { get; set; }
+        public string Message { get; set; }
         
-        public PushArgs()
+        public SaveArgs()
         {
             Repo = "../../../aclx";
+            Message = "Updated";
         }
     }
 }

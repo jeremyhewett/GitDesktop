@@ -58,16 +58,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Args\CloneArgs.cs" />
+    <Compile Include="Args\OpenArgs.cs" />
     <Compile Include="Args\DownloadArgs.cs" />
-    <Compile Include="Args\PushArgs.cs" />
+    <Compile Include="Args\SaveArgs.cs" />
     <Compile Include="Args\UploadArgs.cs" />
-    <Compile Include="Commands\CloneCommand.cs" />
+    <Compile Include="Commands\OpenCommand.cs" />
     <Compile Include="Commands\DownloadCommand.cs" />
-    <Compile Include="Commands\PushCommand.cs" />
+    <Compile Include="Commands\SaveCommand.cs" />
     <Compile Include="Commands\UploadCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\Config.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
